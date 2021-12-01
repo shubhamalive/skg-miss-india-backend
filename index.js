@@ -281,6 +281,6 @@ app.post("/users", upload.any("photo"), (req, res) => {
   );
 });
 
-app.listen(3001, () => {
-  console.log("server is running");
+app.listen(port, () => {
+  console.log(`Server Up and Running`)
 });
