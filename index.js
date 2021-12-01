@@ -31,6 +31,14 @@ const db = mysql.createConnection({
   insecureAuth: true,
 });
 
+// Test Ping
+app.get( '/ping', (req,res) => {
+
+  res.send('Server is up and Running!')
+  
+  });
+// Test Ping
+
 app.post("/users", upload.any("photo"), (req, res) => {
   const {
     fname,
